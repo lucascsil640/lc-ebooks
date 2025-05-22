@@ -1,3 +1,11 @@
+:root {
+    --header-bg: #0e0e0e;
+    --footer-bg: #333;
+    --btn-bg: #ff9900;
+    --btn-hover: #cc7a00;
+    --text-color: #333;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,20 +14,24 @@ body {
 }
 
 header {
-    background-color: #0e0e0e;
-    color: rgb(255, 255, 255);
+    background-color: var(--header-bg);
+    color: #fff;
     padding: 20px;
     font-size: 24px;
-    background-color: var(--header-bg);
 }
 
 .subtitulo {
-    font-size: 18px; 
-    color: #ff9900;       
+    font-size: 18px;       /* Ajuste o tamanho conforme sua preferência */
+    color: #ff9900;        /* Escolha uma cor que complemente sua identidade visual */
     margin-top: 5px;
     font-weight: 500;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 .ebook {
     display: flex;
@@ -47,15 +59,15 @@ header {
 }
 
 .botao {
-    display: inline-block;
-    background-color: #ff9900;
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--btn-bg);
     color: white;
     padding: 15px 25px;
     font-size: 18px;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease, transform 0.3s ease;
-    background-color: var(--btn-bg);
 }
 
 .botao:hover {
@@ -63,42 +75,51 @@ header {
     background-color: var(--btn-hover);
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.botao img.amazon-logo {
+    width: 20px;
+    height: auto;
+    margin-right: 8px;
+    object-fit: contain;
+}
+
+
+/* Estilização para o logotipo da Amazon dentro do botão */
+.amazon-logo {
+    width: 30px !important;
+    height: auto;
+    margin-right: 8px;
+    object-fit: contain;
 }
 
 
 footer {
-    background-color: #333;
+    background-color: var(--footer-bg);
     color: white;
     padding: 10px;
     margin-top: 20px;
 }
 
 .sobre-livros {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
 }
 
 .sobre-livros h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
-  color: #0e0e0e;
-  margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: var(--header-bg);
+    margin-bottom: 20px;
 }
 
 .sobre-livros p {
-  font-size: 18px;
-  color: #333;
-  line-height: 1.6;
+    font-size: 18px;
+    color: var(--text-color);
+    line-height: 1.6;
 }
-
 
 @media (max-width: 768px) {
     .ebook {
@@ -120,13 +141,4 @@ footer {
         padding: 10px 20px;
         font-size: 16px;
     }
-}
-
-
-:root {
-    --header-bg: #0e0e0e;
-    --footer-bg: #333;
-    --btn-bg: #ff9900;
-    --btn-hover: #cc7a00;
-    --text-color: #333;
 }
