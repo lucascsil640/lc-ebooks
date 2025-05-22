@@ -85,7 +85,7 @@ header {
 
 /* Estilização para o logotipo da Amazon dentro do botão */
 .amazon-logo {
-    width: 16px !important;
+    width: 30px !important;
     height: auto;
     margin-right: 8px;
     object-fit: contain;
