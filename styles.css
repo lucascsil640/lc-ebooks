@@ -20,6 +20,13 @@ header {
     font-size: 24px;
 }
 
+.logo-h1 {
+  width: 80px;       /* Ajuste o valor conforme necessário */
+  height: auto;
+  vertical-align: middle; /* Alinha verticalmente com o texto */
+  margin-right: 10px;     /* Espaço entre a imagem e o texto */
+}
+
 .subtitulo {
     font-size: 18px;       /* Ajuste o tamanho conforme sua preferência */
     color: #ff9900;        /* Escolha uma cor que complemente sua identidade visual */
